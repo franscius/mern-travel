@@ -1,4 +1,4 @@
-12 - May - 2022 
+
 
 
 # Server | side dependencies...
@@ -20,4 +20,3 @@
 openssl rand -base64 32
 ```
 
-Learning by inspired from[.](https://youtu.be/k3Vfj-e1Ma4)
