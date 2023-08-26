@@ -38,7 +38,7 @@ app.use("/api/confirmb", confirmbRoute)
 
 app.use((err, req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); // Allow any domain
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Methods', 'get, post, put, delete');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
 });
