@@ -41,14 +41,6 @@ app.use((err, req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
-  const errorStatus = err.status || 500
-  const errorMessage = err.message || "Something went wrong!"
-  return res.status(errorStatus).json({
-    success: false,
-    status: errorStatus,
-    message: errorMessage,
-    stack: err.stack,
-  });
 });
 
 
